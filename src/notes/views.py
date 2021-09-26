@@ -20,3 +20,9 @@ def note_finished_view(request, id):
     note.finished = True
     note.save()
     return redirect('notes:list')
+
+
+def note_delete_view(request, id):
+    note = get_object_or_404(Note, id=id)
+    note.delete()
+    return redirect('notes:list')
