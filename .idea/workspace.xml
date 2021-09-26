@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444f286d-dcde-4867-8bfc-b696a7f5a371" name="Changes" comment="">
+    <list default="true" id="444f286d-dcde-4867-8bfc-b696a7f5a371" name="Changes" comment="Set a note as finished">
+      <change afterPath="$PROJECT_DIR$/src/notes/migrations/0002_note_finished.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notes/migrations/0003_auto_20220603_1830.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notepad/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notepad/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/note_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/note_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +45,7 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -123,7 +127,7 @@
       <workItem from="1654261465236" duration="106000" />
       <workItem from="1632678642330" duration="277000" />
       <workItem from="1654275355957" duration="105000" />
-      <workItem from="1654275486359" duration="1809000" />
+      <workItem from="1654275486359" duration="4847000" />
     </task>
     <servers />
   </component>
@@ -152,6 +156,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set a note as finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set a note as finished" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

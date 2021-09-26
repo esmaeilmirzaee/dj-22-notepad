@@ -1,13 +1,23 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 
 
 from .models import Note
 
 
 def note_list_view(request):
-    list = Note.objects.all()
+    undone_notes = Note.objects.filter(finished=False)
+    done_notes = Note.objects.filter(finished=True)
+
     context = {
-        'object_list': list,
+        'undone_notes': undone_notes,
+        'done_notes': done_notes,
     }
 
     return render(request, 'note_list.html', context)
+
+
+def note_finished_view(request, id):
+    note = get_object_or_404(Note, id=id)
+    note.fished = True
+    note.save()
+    return redirect('notes:list')
