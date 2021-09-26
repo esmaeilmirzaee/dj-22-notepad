@@ -40,5 +40,7 @@ def recover_note_view(request, id):
 
 def delete_note_view(request, id):
     note = get_object_or_404(Note, id=id)
+    if note is None:
+        print("can't find the note.")
     note.delete()
     return redirect('notes:list')
