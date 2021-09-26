@@ -1,10 +1,29 @@
 {% extends 'base.html' %} {% block content %}
 <h1 class="text-center">Note list view</h1>
-<ul class="">
+<ul class="row">
     {% if object_list|length == 0 %}
-    <p>There is no item to show</p>
-    {% endif %} {% for item in object_list %}
-    <li>{{item.title}}</li>
+
+    <p class="badge bg-info">There is no item to show</p>
+    {% endif %}
+
+    {% for item in object_list %}
+    <li class="col d-flex justify-content-between align-items-center">
+        <h6 class="text-primary">
+            {{item.title}}
+        </h6>
+        <div class="badge bg-{{item.get_label_display}}">{{item.due_date|timesince}}</div>
+        <div class="d-flex">
+            <span class="btn">
+                <i class="bi bi-pencil-square"/>
+            </span>
+            <span class="btn">
+                <i class="bi bi-trash3"/>
+            </span>
+            <span>
+                <i class="bi bi-check" />
+            </span>
+        </div>
+    </li>
     {% endfor %}
 </ul>
 {% endblock content %}
