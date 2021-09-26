@@ -1,0 +1,41 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <svg xmlns="http://www.w3.org/2000/svg" class="" style="width: 24px; height: 24px" viewBox="0 0 20 20"
+         fill="currentColor">
+        <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+              clip-rule="evenodd"></path>
+    </svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add note</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="modal-body" method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="id_title" class="form-label">Title</label>
+                    {{ form.title }}
+                    <div id="emailHelp" class="form-text">Select a title for your note.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="id_due_date" class="form-label">Due date</label>
+                    {{ form.due_date }}
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Type</label>
+                    {{ form.label }}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

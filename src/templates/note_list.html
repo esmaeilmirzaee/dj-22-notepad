@@ -1,8 +1,11 @@
 {% extends 'base.html' %} {% block content %}
-    <h1 class="text-center">Note list view</h1>
-    <div class="container">
-        <div class="row">
+    <h1 class="text-center">Note list</h1>
 
+    <div class="container">
+        <div class="my-2">
+            {% include 'form_new.html' %}
+        </div>
+        <div class="row">
             {% if object_list|length == 0 %}
 
                 <p class="col-12 badge bg-info">There is no item to show</p>
