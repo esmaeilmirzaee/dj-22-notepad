@@ -1,8 +1,6 @@
-from configparser import MAX_INTERPOLATION_DEPTH
-from email.policy import default
 from django.db import models
 from django.utils.timezone import now
-
+from django.shortcuts import reverse
 
 LABEL_CHOICES = (
     ("DA", "dark"),
@@ -23,3 +21,18 @@ class Note(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_finished_note_url(self):
+        return reverse('notes:finished-note', kwargs={
+            'id': self.id
+        })
+
+    def get_recover_note_url(self):
+        return reverse('notes:recover-note', kwargs={
+            'id': self.id
+        })
+
+    def get_delete_note_url(self):
+        return reverse('notes:delete-note', kwargs={
+            'id': self.id
+        })

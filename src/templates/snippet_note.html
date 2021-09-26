@@ -14,7 +14,7 @@
             </svg>
         </a>
         {% if type == 'SUCCESS' %}
-            <a class="success" href="{% url 'notes:finished-note' item.id %}">
+            <a class="success" href="{{ item.get_finished_note_url }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-success"
                      style="width: 24px; height: 24px"
                      viewBox="0 0 20 20" fill="currentColor">
@@ -24,7 +24,7 @@
                 </svg>
             </a>
         {% else %}
-            <a class="primary" href="{% url 'notes:recover-note' item.id %}">
+            <a class="primary" href="{{ item.get_recover_note_url }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-info"
                      style="width: 24px; height: 24px" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor" stroke-width="2">
@@ -32,7 +32,7 @@
                 </svg>
             </a>
         {% endif %}
-        <a class="danger" href="{% url 'notes:delete-note' item.id %}">
+        <a class="danger" href="{{ item.get_delete_note_url }}">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-danger"
                  style="width: 24px; height: 24px"
                  fill="none" viewBox="0 0 24 24"
