@@ -15,14 +15,21 @@ def note_list_view(request):
     return render(request, 'note_list.html', context)
 
 
-def note_finished_view(request, id):
+def finished_note_view(request, id):
     note = get_object_or_404(Note, id=id)
     note.finished = True
     note.save()
     return redirect('notes:list')
 
 
-def note_delete_view(request, id):
+def recover_note_view(request, id):
+    note = get_object_or_404(Note, id=id)
+    note.finished = False
+    note.save()
+    return redirect('notes:list')
+
+
+def delete_note_view(request, id):
     note = get_object_or_404(Note, id=id)
     note.delete()
     return redirect('notes:list')
