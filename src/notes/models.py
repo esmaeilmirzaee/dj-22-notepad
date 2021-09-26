@@ -36,3 +36,10 @@ class Note(models.Model):
         return reverse('notes:delete-note', kwargs={
             'id': self.id
         })
+
+    def get_edit_note_url(self):
+        return reverse('notes:edit-note', kwargs={
+            'id': self.id,
+            'title': self.title,
+            'due_date': self.due_date,
+        })

@@ -44,3 +44,21 @@ def delete_note_view(request, id):
         print("can't find the note.")
     note.delete()
     return redirect('notes:list')
+
+
+def edit_note_view(request, id):
+    note = get_object_or_404(Note, id=id)
+
+    context = {
+        'form': {},
+        'note': note,
+    }
+    if request.method == 'POST':
+        form = NoteForm(request.POST)
+        print(form.errors)
+        if form.is_valid():
+            print('title', form.cleaned_data['title'])
+            note.save()
+            return redirect('notes:list')
+
+    return render(request, 'edit_note.html', context)

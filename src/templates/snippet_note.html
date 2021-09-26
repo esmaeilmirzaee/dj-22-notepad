@@ -5,7 +5,7 @@
     </h6>
     <div class="badge bg-{{ item.get_label_display }}">{{ item.due_date|timesince }}</div>
     <div class="d-flex align-items-center">
-        <a class="warning" href="">
+        <a class="warning" href="{% url 'notes:edit-note' item.id %}">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-warning"
                  style="width: 24px; height: 24px"
                  fill="none" viewBox="0 0 24 24"
