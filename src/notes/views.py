@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
 
-
 from .models import Note
 
 
@@ -18,6 +17,6 @@ def note_list_view(request):
 
 def note_finished_view(request, id):
     note = get_object_or_404(Note, id=id)
-    note.fished = True
+    note.finished = True
     note.save()
     return redirect('notes:list')

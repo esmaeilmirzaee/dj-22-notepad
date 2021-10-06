@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444f286d-dcde-4867-8bfc-b696a7f5a371" name="Changes" comment="Set a note as finished">
-      <change afterPath="$PROJECT_DIR$/src/notes/migrations/0002_note_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notes/migrations/0003_auto_20220603_1830.py" afterDir="false" />
+    <list default="true" id="444f286d-dcde-4867-8bfc-b696a7f5a371" name="Changes" comment="Set a note as finished, add icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notepad/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notepad/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/note_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/note_list.html" afterDir="false" />
     </list>
@@ -41,7 +39,6 @@
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -127,8 +124,17 @@
       <workItem from="1654261465236" duration="106000" />
       <workItem from="1632678642330" duration="277000" />
       <workItem from="1654275355957" duration="105000" />
-      <workItem from="1654275486359" duration="4847000" />
+      <workItem from="1654275486359" duration="5478000" />
+      <workItem from="1633550857524" duration="878000" />
     </task>
+    <task id="LOCAL-00001" summary="Set a note as finished, add icon">
+      <created>1632686196211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632686196211</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +165,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set a note as finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set a note as finished" />
+    <MESSAGE value="Set a note as finished, add icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set a note as finished, add icon" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

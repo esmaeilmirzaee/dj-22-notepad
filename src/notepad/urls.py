@@ -3,10 +3,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-import notes.urls
-
 urlpatterns = [
-    path('', include(notes.urls, namespace='notes')),
+    path('n/', include('notes.urls', namespace='notes')),
     path('admin/', admin.site.urls),
 ]
 
