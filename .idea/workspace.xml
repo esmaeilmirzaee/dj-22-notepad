@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444f286d-dcde-4867-8bfc-b696a7f5a371" name="Changes" comment="Fix a bug">
+    <list default="true" id="444f286d-dcde-4867-8bfc-b696a7f5a371" name="Changes" comment="Edit a note">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/form_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/form_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/note_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/note_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/snippet_note.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/snippet_note.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +125,7 @@
       <workItem from="1632678642330" duration="277000" />
       <workItem from="1654275355957" duration="105000" />
       <workItem from="1654275486359" duration="5478000" />
-      <workItem from="1633550857524" duration="8318000" />
+      <workItem from="1633550857524" duration="8770000" />
     </task>
     <task id="LOCAL-00001" summary="Set a note as finished, add icon">
       <created>1632686196211</created>
@@ -182,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632650991724</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Edit a note">
+      <created>1632667047276</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632667047277</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +221,8 @@
     <MESSAGE value="Use absolute url to handle request" />
     <MESSAGE value="Create a note style" />
     <MESSAGE value="Fix a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix a bug" />
+    <MESSAGE value="Edit a note" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit a note" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

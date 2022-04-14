@@ -48,16 +48,18 @@ def delete_note_view(request, id):
 
 def edit_note_view(request, id):
     note = get_object_or_404(Note, id=id)
+    form = NoteForm()
 
     context = {
-        'form': {},
+        'form': form,
         'note': note,
     }
     if request.method == 'POST':
         form = NoteForm(request.POST)
-        print(form.errors)
         if form.is_valid():
-            print('title', form.cleaned_data['title'])
+            note.title = form.cleaned_data['title']
+            note.label = form.cleaned_data['label']
+            note.due_date = form.cleaned_data['due_date']
             note.save()
             return redirect('notes:list')
 
